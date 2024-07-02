@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form class="cityInfo">
+        <input type="text" class="cityInput" placeholder="Enter City">
+        <button type="submit" onclick="getCity()">Get Weather</button>
+    </form>
+
+    <div class="weatherCard">
+        <h1 class="cityDisplay">São Leopoldo - RS</h1>
+        <p class="tempDisplay">30ºC</p>
+        <p class="descDisplay">Clear Skies</p>
+        <p class="emojiDisplay">☀️</p>
+        <p class="errorDisplay">Invalid City</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
