@@ -9,15 +9,15 @@
 <body>
     <form class="cityInfo">
         <input type="text" class="cityInput" placeholder="Enter City">
-        <button type="submit" onclick="getCity()">Get Weather</button>
+        <button type="submit" onclick="getWeather()">Get Weather</button>
     </form>
 
-    <div class="weatherCard">
+    <div class="weatherCard" style="display: none;">
         <h1 class="cityDisplay">São Leopoldo - RS</h1>
         <p class="tempDisplay">30ºC</p>
         <p class="descDisplay">Clear Skies</p>
         <p class="emojiDisplay">☀️</p>
-        <p class="errorDisplay">Invalid City</p>
+        <p class="errorDisplay"></p>
     </div>
     <script src="script.js"></script>
 </body>

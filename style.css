@@ -55,9 +55,10 @@ p{
     font-style: italic;
     font-size: 1.5rem;
     font-weight: bold;
+    margin-bottom: 30px;
 }
 .emojiDisplay{
-    font-size: 6rem;
+    font-size: 5rem;
     margin: 0;
     user-select: none;
 }
