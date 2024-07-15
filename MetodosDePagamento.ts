@@ -1,7 +1,5 @@
 export interface MetodosDePagamento{
 
-    valorTotal: number
-
-    pagar():boolean;
+    pagar(valorTotal: number):boolean;
 
 }

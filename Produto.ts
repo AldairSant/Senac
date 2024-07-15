@@ -1,6 +1,6 @@
 export interface Produtos {
     tipo: string
-    preço: number
+    preco: number
     nome: string
     peso: number
 

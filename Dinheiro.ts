@@ -1,14 +1,9 @@
 import { MetodosDePagamento } from "./MetodosDePagamento";
 import * as reader from 'readline-sync'
 
-export class CartaoDeCredito implements MetodosDePagamento{
-
-    bandeira: string
-
-    constructor(bandeira: string){
-        this.bandeira = bandeira
-    }
-
+export class Dinheiro implements MetodosDePagamento{
+    
+    
     pagar(valorTotal: number): boolean {
 
         let option: number = 0
@@ -21,6 +16,8 @@ export class CartaoDeCredito implements MetodosDePagamento{
             console.log('1 - Pagar')
             console.log('2 - Voltar')
             option = Number(reader.question('Opcao: '))
+            const valorRecebido = Number(reader.question('Valor recebido: R$'))
+            console.log(`Valor a receber de troco: R$${(valorRecebido - valorTotal).toFixed(2)}`)
             console.log('---------------------------------------')
             if(option == 1)
                 pgtoEfetuado = true
@@ -29,5 +26,4 @@ export class CartaoDeCredito implements MetodosDePagamento{
         }
     return pgtoEfetuado
     }
-
 }

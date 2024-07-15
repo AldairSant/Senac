@@ -2,9 +2,9 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Livro = void 0;
 var Livro = /** @class */ (function () {
-    function Livro(tipo, preço, nome, peso) {
+    function Livro(tipo, preco, nome, peso) {
         this.tipo = tipo,
-            this.preço = preço,
+            this.preco = preco,
             this.nome = nome,
             this.peso = peso;
     }
@@ -12,7 +12,7 @@ var Livro = /** @class */ (function () {
         console.log("O nome deste livro \u00E9: ".concat(this.nome));
     };
     Livro.prototype.calcularValorTotal = function () {
-        return this.preço;
+        return this.preco * 1.03;
     };
     return Livro;
 }());

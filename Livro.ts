@@ -3,13 +3,13 @@ import { Produtos } from "./Produto"
 export class Livro implements Produtos {
 
     tipo: string
-    preço: number
+    preco: number
     nome: string
     peso: number
     
-    constructor(tipo: string, preço: number, nome:string, peso: number){
+    constructor(tipo: string, preco: number, nome:string, peso: number){
         this.tipo = tipo,
-        this.preço = preço,
+        this.preco = preco,
         this.nome = nome,
         this.peso = peso
     }
@@ -19,6 +19,6 @@ export class Livro implements Produtos {
     }
 
     calcularValorTotal(): number {
-        return this.preço * 1.03
+        return this.preco * 1.03
     }
 }
